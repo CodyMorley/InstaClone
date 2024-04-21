@@ -16,6 +16,7 @@
 		042A31072BD5C9B3007AD68D /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A31062BD5C9B3007AD68D /* AddEmailView.swift */; };
 		042A31092BD5CCDC007AD68D /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A31082BD5CCDC007AD68D /* IGTextFieldModifier.swift */; };
 		042A310B2BD5CDFC007AD68D /* CreateUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A310A2BD5CDFC007AD68D /* CreateUsernameView.swift */; };
+		042A310D2BD5D084007AD68D /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A310C2BD5D084007AD68D /* CreatePasswordView.swift */; };
 		04D4C1C82BD49E33007AC525 /* InstaCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C1C72BD49E33007AC525 /* InstaCloneApp.swift */; };
 		04D4C1CA2BD49E33007AC525 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C1C92BD49E33007AC525 /* ContentView.swift */; };
 		04D4C1CC2BD49E34007AC525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D4C1CB2BD49E34007AC525 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		042A31062BD5C9B3007AD68D /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		042A31082BD5CCDC007AD68D /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
 		042A310A2BD5CDFC007AD68D /* CreateUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameView.swift; sourceTree = "<group>"; };
+		042A310C2BD5D084007AD68D /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		04D4C1C42BD49E33007AC525 /* InstaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D4C1C72BD49E33007AC525 /* InstaCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCloneApp.swift; sourceTree = "<group>"; };
 		04D4C1C92BD49E33007AC525 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				042A31042BD5B805007AD68D /* LoginView.swift */,
 				042A31062BD5C9B3007AD68D /* AddEmailView.swift */,
 				042A310A2BD5CDFC007AD68D /* CreateUsernameView.swift */,
+				042A310C2BD5D084007AD68D /* CreatePasswordView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				042A30FD2BD4EF71007AD68D /* UserStatView.swift in Sources */,
 				042A30FF2BD59D25007AD68D /* FeedView.swift in Sources */,
 				04D4C2012BD49FD0007AC525 /* MainTabView.swift in Sources */,
+				042A310D2BD5D084007AD68D /* CreatePasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
