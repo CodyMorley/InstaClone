@@ -1,5 +1,5 @@
 //
-//  AddEmailView.swift
+//  CreateUsernameView.swift
 //  InstaClone
 //
 //  Created by Cody Morley on 4/21/24.
@@ -7,30 +7,29 @@
 
 import SwiftUI
 
-struct AddEmailView: View {
+struct CreateUsernameView: View {
     @Environment(\.dismiss) var dismiss
-    @State private var email = ""
+    @State private var username = ""
     
     var body: some View {
         VStack(spacing: 12) {
-            Text("Add your email")
+            Text("Create username")
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.top)
             
-            Text("You'll use this email to sign in to your account")
+            Text("Pick a username for your new account. You can always change it later.")
                 .font(.footnote)
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            TextField("Email", text: $email)
+            TextField("Username", text: $username)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())
             
             NavigationLink {
-                CreateUsernameView()
-                    .navigationBarBackButtonHidden(true)
+                Text("Create Password View")
             } label: {
                 Text("Next")
                     .font(.subheadline)
@@ -57,5 +56,5 @@ struct AddEmailView: View {
 }
 
 #Preview {
-    AddEmailView()
+    CreateUsernameView()
 }
