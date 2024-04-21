@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		042A30FA2BD4A1A9007AD68D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A30F92BD4A1A9007AD68D /* ProfileView.swift */; };
+		042A30FD2BD4EF71007AD68D /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A30FC2BD4EF71007AD68D /* UserStatView.swift */; };
 		04D4C1C82BD49E33007AC525 /* InstaCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C1C72BD49E33007AC525 /* InstaCloneApp.swift */; };
 		04D4C1CA2BD49E33007AC525 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C1C92BD49E33007AC525 /* ContentView.swift */; };
 		04D4C1CC2BD49E34007AC525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D4C1CB2BD49E34007AC525 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		042A30F92BD4A1A9007AD68D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		042A30FC2BD4EF71007AD68D /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		04D4C1C42BD49E33007AC525 /* InstaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D4C1C72BD49E33007AC525 /* InstaCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCloneApp.swift; sourceTree = "<group>"; };
 		04D4C1C92BD49E33007AC525 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042A30FB2BD4EF5A007AD68D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				042A30FC2BD4EF71007AD68D /* UserStatView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		04D4C1BB2BD49E33007AC525 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				04D4C1F62BD49E9B007AC525 /* Authentication */,
+				042A30FB2BD4EF5A007AD68D /* Components */,
 				04D4C1FC2BD49ED0007AC525 /* Feed */,
 				04D4C1FB2BD49EC9007AC525 /* Profile */,
 				04D4C1FA2BD49EC3007AC525 /* Root */,
@@ -362,6 +373,7 @@
 				042A30FA2BD4A1A9007AD68D /* ProfileView.swift in Sources */,
 				04D4C1CA2BD49E33007AC525 /* ContentView.swift in Sources */,
 				04D4C1C82BD49E33007AC525 /* InstaCloneApp.swift in Sources */,
+				042A30FD2BD4EF71007AD68D /* UserStatView.swift in Sources */,
 				04D4C2012BD49FD0007AC525 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
