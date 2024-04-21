@@ -26,18 +26,10 @@ struct LoginView: View {
                 // text fields
                 TextField("Enter your email", text: $email)
                     .autocapitalization(.none)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(IGTextFieldModifier())
                 
                 SecureField("Password", text: $password)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(IGTextFieldModifier())
             }
             
             // forgot password button

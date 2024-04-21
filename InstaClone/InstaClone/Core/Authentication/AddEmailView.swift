@@ -26,12 +26,7 @@ struct AddEmailView: View {
             
             TextField("Email", text: $email)
                 .autocapitalization(.none)
-                .font(.subheadline)
-                .padding(12)
-                .background(Color(.systemGray6))
-                .cornerRadius(10)
-                .padding(.horizontal, 24)
-                .padding(.top)
+                .modifier(IGTextFieldModifier())
             
             Button {
                 NSLog("Email Next Button Tapped.")
