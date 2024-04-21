@@ -14,7 +14,7 @@ struct CreatePasswordView: View {
     var body: some View {
         VStack(spacing: 12) {
             Text("Create a password")
-                .font(.title)
+                .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
             
@@ -30,7 +30,7 @@ struct CreatePasswordView: View {
                 .padding(.top)
             
             NavigationLink {
-                Text("Finish Sign Up")
+                CompleteSignUpView()
                     .navigationBarBackButtonHidden(true)
             } label: {
                 Text("Next")

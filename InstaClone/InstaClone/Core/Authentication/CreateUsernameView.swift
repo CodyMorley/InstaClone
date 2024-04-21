@@ -14,7 +14,7 @@ struct CreateUsernameView: View {
     var body: some View {
         VStack(spacing: 12) {
             Text("Create username")
-                .font(.title)
+                .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
             
