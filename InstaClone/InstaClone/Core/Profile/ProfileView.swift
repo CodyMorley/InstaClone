@@ -16,9 +16,17 @@ struct ProfileView: View {
                     // User Profile Pic + Stats
                 }
                 
-                VStack {
-                    // name and bio
+                VStack(alignment: .leading, spacing: 4) {
+                    // name
+                    Text("Silvio Dante")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                    // bio
+                    Text("Proprietor of The Bada Bing off Route 17")
+                        .font(.footnote)
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal)
                 
                 
                 Button {
