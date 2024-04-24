@@ -11,7 +11,7 @@ struct User: Identifiable, Codable {
     let email: String
     let id: String
     var bio: String?
-    var fullName: String
+    var fullName: String?
     var profileImageURL: String?
     var username: String
 }
@@ -41,6 +41,12 @@ extension User {
               bio: "Shy old man",
               fullName: "Herman Rabkin",
               profileImageURL: "hesh",
-              username: "Hesh88")
+              username: "Hesh88"),
+        .init(email: "queenofnorthjerz@email.com",
+              id: UUID().uuidString,
+              bio: "Mother of 2 great kids. Real Estate Developer. Just a regular garbageman's wife.",
+              fullName: "Carmela Soprano",
+              profileImageURL: "carmela",
+              username: "JERZQUEEN")
     ]
 }
