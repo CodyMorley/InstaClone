@@ -31,11 +31,14 @@ struct ProfileView: View {
                         Spacer()
                         
                         HStack(spacing: 8) {
-                            UserStatView(value: 3, title: "Posts")
+                            UserStatView(value: 3,
+                                         title: "Posts")
                             
-                            UserStatView(value: 556, title: "Followers")
+                            UserStatView(value: 556,
+                                         title: "Followers")
                             
-                            UserStatView(value: 12, title: "")
+                            UserStatView(value: 12,
+                                         title: "Following")
                         }
                     }
                     .padding(.horizontal)
