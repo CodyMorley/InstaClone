@@ -18,7 +18,9 @@ struct UploadPostView: View {
             // Header action toolbar
             HStack {
                 Button {
-                    NSLog("Cancel upload")
+                    caption = ""
+                    viewModel.selectedImage = nil
+                    viewModel.postImage = nil
                 } label: {
                     Text("Cancel")
                 }
@@ -41,10 +43,12 @@ struct UploadPostView: View {
             
             // Image + caption
             HStack(spacing: 6) {
-                if let image = viewModel.profileImage {
+                if let image = viewModel.postImage {
                     image
                         .resizable()
+                        .scaledToFill()
                         .frame(width: 100, height: 100)
+                        .clipped()
                 }
                 
                 TextField("Enter your caption...", text: $caption, axis: .vertical)
