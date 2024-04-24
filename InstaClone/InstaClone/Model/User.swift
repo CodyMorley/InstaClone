@@ -20,7 +20,7 @@ extension User {
     static var mockUsers: [User] = [
         .init(email: "sillyD@email.com",
               id: UUID().uuidString,
-              bio: "Our true enemy has yet to reveal himself. Bada Bing off Rt. 17",
+              bio: "Our true enemy has yet to reveal himself. \nBada Bing off Rt. 17",
               fullName: "Silvio M. Dante",
               profileImageURL: "silvio",
               username: "SillyD"),
@@ -44,7 +44,7 @@ extension User {
               username: "Hesh88"),
         .init(email: "queenofnorthjerz@email.com",
               id: UUID().uuidString,
-              bio: "Mother of 2 great kids. Real Estate Developer. Just a regular garbageman's wife.",
+              bio: "Mother of 2 great kids. Real Estate Developer. \nJust a regular garbageman's wife.",
               fullName: "Carmela Soprano",
               profileImageURL: "carmela",
               username: "JERZQUEEN")

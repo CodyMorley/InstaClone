@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProfileView: View {
+    let user: User
+    
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
@@ -21,7 +23,7 @@ struct ProfileView: View {
             VStack(spacing: 10) {
                 HStack {
                     // User Profile Pic + Stats
-                    Image("silvio")
+                    Image(user.profileImageURL ?? "")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 80, height: 80)
@@ -44,12 +46,16 @@ struct ProfileView: View {
                 
                 VStack(alignment: .leading, spacing: 4) {
                     // name
-                    Text("Silvio M. Dante")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
+                    if let full = user.fullName {
+                        Text(full)
+                            .font(.footnote)
+                            .fontWeight(.semibold)
+                    }
                     // bio
-                    Text("Proprietor of The Bada Bing off Route 17")
-                        .font(.footnote)
+                    if let bio = user.bio {
+                        Text(bio)
+                            .font(.footnote)
+                    }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal)
@@ -87,5 +93,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(user: User.mockUsers[0])
 }
