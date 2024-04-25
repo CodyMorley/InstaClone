@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            if $contentViewModel.session == nil {
+            if contentViewModel.session == nil {
                 LoginView()
                     .environmentObject(registrationViewModel)
             } else {
