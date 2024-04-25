@@ -7,9 +7,10 @@
 
 import Combine
 import Firebase
+import FirebaseAuth
 import SwiftUI
 
-@MainActor
+
 class ContentViewModel: ObservableObject {
     @Published var session: FirebaseAuth.User?
     private let service = AuthService.shared

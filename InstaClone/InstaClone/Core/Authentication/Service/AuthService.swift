@@ -8,6 +8,7 @@
 import FirebaseAuth
 import SwiftUI
 
+
 class AuthService {
     @Published var session: FirebaseAuth.User?
     
@@ -17,6 +18,7 @@ class AuthService {
         self.session = Auth.auth().currentUser
     }
     
+    @MainActor
     func login(for email: String, password: String) async throws {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
@@ -26,6 +28,7 @@ class AuthService {
         }
     }
     
+    @MainActor
     func createUser(for email: String, password: String, username: String) async throws {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
