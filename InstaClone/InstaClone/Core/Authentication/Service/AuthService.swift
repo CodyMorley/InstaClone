@@ -35,6 +35,11 @@ class AuthService {
     }
     
     func signOut() {
-        
+        do {
+            try Auth.auth().signOut()
+            self.session = nil
+        } catch {
+            NSLog("Error logging out: \(error.localizedDescription) \nMore Info: \(error)")
+        }
     }
 }
