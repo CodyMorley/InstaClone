@@ -18,7 +18,12 @@ class AuthService {
     }
     
     func login(for email: String, password: String) async throws {
-        
+        do {
+            let result = try await Auth.auth().signIn(withEmail: email, password: password)
+            self.session = result.user
+        } catch {
+            NSLog("Error authenticating session for \(email): \(error.localizedDescription).\nMore info: \(error)")
+        }
     }
     
     func createUser(for email: String, password: String, username: String) async throws {
@@ -26,7 +31,7 @@ class AuthService {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.session = result.user
         } catch {
-            NSLog("Error authenticating session for \(email) \(username): \(error.localizedDescription).\nMore info: \(error)")
+            NSLog("Error authenticating session to create \(username) for \(email): \(error.localizedDescription).\nMore info: \(error)")
         }
     }
     
