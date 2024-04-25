@@ -21,8 +21,13 @@ class AuthService {
         
     }
     
-    func createUser(for email: String, password: String) async throws {
-        
+    func createUser(for email: String, password: String, username: String) async throws {
+        do {
+            let result = try await Auth.auth().createUser(withEmail: email, password: password)
+            self.session = result.user
+        } catch {
+            NSLog("Error authenticating session for \(email) \(username): \(error.localizedDescription).\nMore info: \(error)")
+        }
     }
     
     func loadUserData() async throws {
