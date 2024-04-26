@@ -48,7 +48,7 @@ struct MainTabView: View {
                 }
                 .tag(3)
             
-            ProfileView(user: User.mockUsers[0])
+            CurrentUserProfileView(user: User.mockUsers[0])
                 .onAppear {
                     selectedIndex = 4
                 }
