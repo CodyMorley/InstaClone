@@ -12,12 +12,13 @@ import SwiftUI
 
 
 class AuthService {
+    @Published var currentUser: User?
     @Published var session: FirebaseAuth.User?
     
     static let shared = AuthService()
     
     init() {
-        self.session = Auth.auth().currentUser
+        Task { try await loadUserData() }
     }
     
     @MainActor
@@ -42,7 +43,11 @@ class AuthService {
     }
     
     func loadUserData() async throws {
+        session = Auth.auth().currentUser
         
+        guard let currentUserId = session?.uid else { return }
+        let userData = try await Firestore.firestore().collection("users").document(currentUserId).getDocument()
+        currentUser = try userData.data(as: User.self)
     }
     
     func signOut() {
