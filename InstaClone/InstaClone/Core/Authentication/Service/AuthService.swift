@@ -26,6 +26,7 @@ class AuthService {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.session = result.user
+            try await loadUserData()
         } catch {
             NSLog("Error authenticating session for \(email): \(error.localizedDescription).\nMore info: \(error)")
         }
@@ -42,6 +43,7 @@ class AuthService {
         }
     }
     
+    @MainActor
     func loadUserData() async throws {
         session = Auth.auth().currentUser
         
@@ -53,7 +55,8 @@ class AuthService {
     func signOut() {
         do {
             try Auth.auth().signOut()
-            self.session = nil
+            session = nil
+            currentUser = nil
         } catch {
             NSLog("Error logging out: \(error.localizedDescription) \nMore Info: \(error)")
         }
@@ -61,6 +64,7 @@ class AuthService {
     
     private func uploadUserData(id: String, username: String, email: String) async {
         let user = User(email: email, id: id, username: username)
+        currentUser = user
         guard let encoded = try? Firestore.Encoder().encode(user) else { return }
         
         try? await Firestore.firestore().collection("users").document(user.id).setData(encoded)
