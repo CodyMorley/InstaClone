@@ -5,6 +5,7 @@
 //  Created by Cody Morley on 4/21/24.
 //
 
+import Firebase
 import Foundation
 
 struct User: Hashable, Identifiable, Codable {
@@ -14,6 +15,11 @@ struct User: Hashable, Identifiable, Codable {
     var fullName: String?
     var profileImageURL: String?
     var username: String
+    
+    var isCurrentUser: Bool {
+        guard let currentID = Auth.auth().currentUser?.uid else { return false }
+        return currentID == id
+    }
 }
 
 extension User {
