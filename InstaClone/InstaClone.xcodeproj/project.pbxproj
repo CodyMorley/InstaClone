@@ -156,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				042A312D2BD9CB11007AD68D /* AuthService.swift */,
+				04BC51B62BDD8A0600860FD1 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
