@@ -10,11 +10,12 @@ import SwiftUI
 
 struct EditProfileView: View {
     @Environment(\.dismiss) var dismiss
+    @State private var bio = ""
+    @State private var fullName = ""
     @State private var selectedImage: PhotosPickerItem?
     
     var body: some View {
         VStack {
-            // toolbar
             VStack {
                 HStack {
                     Button("Cancel") {
@@ -37,12 +38,11 @@ struct EditProfileView: View {
                             .fontWeight(.bold)
                     }
                 }
-                .padding()
+                .padding(.horizontal)
                 
                 Divider()
             }
             
-            // edit profile pic
             PhotosPicker(selection: $selectedImage) {
                 VStack {
                     Image(systemName: "person")
@@ -61,9 +61,17 @@ struct EditProfileView: View {
             }
             .padding(.vertical, 8)
             
-            // name
+            VStack {
+                EditProfileRowView(text: $fullName,
+                                   title: "Name",
+                                   placeholderText: "Enter your name...")
+                
+                EditProfileRowView(text: $bio,
+                                   title: "Bio",
+                                   placeholderText: "Enter a short bio...")
+            }
             
-            // bio
+            Spacer()
         }
     }
 }
