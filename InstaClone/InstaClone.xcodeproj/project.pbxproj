@@ -34,6 +34,7 @@
 		042A31322BD9CD13007AD68D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A31312BD9CD13007AD68D /* ContentViewModel.swift */; };
 		042A31352BD9CFAF007AD68D /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042A31342BD9CFAF007AD68D /* RegistrationViewModel.swift */; };
 		04BC51B52BD9EC1C00860FD1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC51B42BD9EC1C00860FD1 /* LoginViewModel.swift */; };
+		04BC51B72BDD8A0600860FD1 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC51B62BDD8A0600860FD1 /* UserService.swift */; };
 		04D4C1C82BD49E33007AC525 /* InstaCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C1C72BD49E33007AC525 /* InstaCloneApp.swift */; };
 		04D4C1CA2BD49E33007AC525 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C1C92BD49E33007AC525 /* ContentView.swift */; };
 		04D4C1CC2BD49E34007AC525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D4C1CB2BD49E34007AC525 /* Assets.xcassets */; };
@@ -85,6 +86,7 @@
 		042A31312BD9CD13007AD68D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		042A31342BD9CFAF007AD68D /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		04BC51B42BD9EC1C00860FD1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		04BC51B62BDD8A0600860FD1 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		04D4C1C42BD49E33007AC525 /* InstaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D4C1C72BD49E33007AC525 /* InstaCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCloneApp.swift; sourceTree = "<group>"; };
 		04D4C1C92BD49E33007AC525 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				042A312D2BD9CB11007AD68D /* AuthService.swift */,
+				04BC51B62BDD8A0600860FD1 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				04D4C1CA2BD49E33007AC525 /* ContentView.swift in Sources */,
 				042A31052BD5B805007AD68D /* LoginView.swift in Sources */,
 				042A312E2BD9CB11007AD68D /* AuthService.swift in Sources */,
+				04BC51B72BDD8A0600860FD1 /* UserService.swift in Sources */,
 				042A31152BD8D98D007AD68D /* Post.swift in Sources */,
 				04D4C1C82BD49E33007AC525 /* InstaCloneApp.swift in Sources */,
 				042A31132BD8D50D007AD68D /* CurrentUserProfileView.swift in Sources */,
