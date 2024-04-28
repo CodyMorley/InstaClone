@@ -19,6 +19,11 @@ class EditProfileViewModel: ObservableObject {
             Task { await loadImage(from: selectedImage) }
         }
     }
+    @Published var user: User
+    
+    init(user: User) {
+        self.user = user
+    }
     
     
     func loadImage(from item: PhotosPickerItem?) async {
@@ -26,5 +31,19 @@ class EditProfileViewModel: ObservableObject {
         guard let data = try? await item.loadTransferable(type: Data.self) else { return }
         guard let uiImage = UIImage(data: data) else { return }
         self.profileImage = Image(uiImage: uiImage)
+    }
+    
+    func updateUserData() async throws {
+        //update profile image if changed
+        
+        //update name if changed
+        if !fullName.isEmpty && user.fullName != fullName {
+            NSLog("Update full name \(fullName)")
+        }
+        
+        //update bio if changed
+        if !bio.isEmpty && user.bio != bio {
+            NSLog("Update bio \(bio)")
+        }
     }
 }
