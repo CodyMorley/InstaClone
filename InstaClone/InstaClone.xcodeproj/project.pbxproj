@@ -39,6 +39,7 @@
 		04BC51BD2BDD931000860FD1 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC51BC2BDD931000860FD1 /* EditProfileView.swift */; };
 		04BC51BF2BDD95C300860FD1 /* EditProfileRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC51BE2BDD95C300860FD1 /* EditProfileRowView.swift */; };
 		04BC51C32BDD98C800860FD1 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC51C22BDD98C800860FD1 /* EditProfileViewModel.swift */; };
+		04BC51C52BDF6B8F00860FD1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BC51C42BDF6B8F00860FD1 /* ImageUploader.swift */; };
 		04D4C1C82BD49E33007AC525 /* InstaCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C1C72BD49E33007AC525 /* InstaCloneApp.swift */; };
 		04D4C1CA2BD49E33007AC525 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C1C92BD49E33007AC525 /* ContentView.swift */; };
 		04D4C1CC2BD49E34007AC525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D4C1CB2BD49E34007AC525 /* Assets.xcassets */; };
@@ -95,6 +96,7 @@
 		04BC51BC2BDD931000860FD1 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		04BC51BE2BDD95C300860FD1 /* EditProfileRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRowView.swift; sourceTree = "<group>"; };
 		04BC51C22BDD98C800860FD1 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		04BC51C42BDF6B8F00860FD1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		04D4C1C42BD49E33007AC525 /* InstaClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D4C1C72BD49E33007AC525 /* InstaCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCloneApp.swift; sourceTree = "<group>"; };
 		04D4C1C92BD49E33007AC525 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				04BC51B62BDD8A0600860FD1 /* UserService.swift */,
+				04BC51C42BDF6B8F00860FD1 /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -544,6 +547,7 @@
 				04D4C1CA2BD49E33007AC525 /* ContentView.swift in Sources */,
 				042A31052BD5B805007AD68D /* LoginView.swift in Sources */,
 				042A312E2BD9CB11007AD68D /* AuthService.swift in Sources */,
+				04BC51C52BDF6B8F00860FD1 /* ImageUploader.swift in Sources */,
 				04BC51B72BDD8A0600860FD1 /* UserService.swift in Sources */,
 				042A31152BD8D98D007AD68D /* Post.swift in Sources */,
 				04D4C1C82BD49E33007AC525 /* InstaCloneApp.swift in Sources */,
