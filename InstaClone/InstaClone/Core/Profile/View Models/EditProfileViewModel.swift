@@ -24,6 +24,9 @@ class EditProfileViewModel: ObservableObject {
     
     init(user: User) {
         self.user = user
+        
+        if let full = user.fullName { fullName = full }
+        if let bio = user.bio { self.bio = bio }
     }
     
     
