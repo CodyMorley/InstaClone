@@ -48,18 +48,13 @@ class AuthService {
         session = Auth.auth().currentUser
         
         guard let currentUserId = session?.uid else { return }
-        let userData = try await Firestore.firestore().collection("users").document(currentUserId).getDocument()
-        currentUser = try userData.data(as: User.self)
+        currentUser = try await UserService.fetchUser(uuid: currentUserId)
     }
     
     func signOut() {
-        do {
-            try Auth.auth().signOut()
-            session = nil
-            currentUser = nil
-        } catch {
-            NSLog("Error logging out: \(error.localizedDescription) \nMore Info: \(error)")
-        }
+        try? Auth.auth().signOut()
+        session = nil
+        currentUser = nil
     }
     
     private func uploadUserData(id: String, username: String, email: String) async {
