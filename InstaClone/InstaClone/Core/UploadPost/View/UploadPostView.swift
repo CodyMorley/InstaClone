@@ -32,8 +32,11 @@ struct UploadPostView: View {
                 Spacer()
                 
                 Button {
-                    Task { try await viewModel.uploadPost(caption: caption) }
-                    clearPostDataAndDismiss()
+                    Task { 
+                        try await viewModel.uploadPost(caption: caption)
+                        clearPostDataAndDismiss()
+                    }
+                    
                 } label: {
                     Text("Upload")
                         .fontWeight(.semibold)
@@ -42,7 +45,7 @@ struct UploadPostView: View {
             .padding(.horizontal)
             
             // Image + caption
-            HStack(spacing: 6) {
+            HStack(spacing: 8) {
                 if let image = viewModel.postImage {
                     image
                         .resizable()
