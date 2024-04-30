@@ -51,6 +51,7 @@
 		04D4C1E52BD49E34007AC525 /* InstaCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C1E42BD49E34007AC525 /* InstaCloneUITestsLaunchTests.swift */; };
 		04D4C2012BD49FD0007AC525 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4C2002BD49FD0007AC525 /* MainTabView.swift */; };
 		04E2ED8D2BE17AA3006B5DD3 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2ED8C2BE17AA3006B5DD3 /* FeedViewModel.swift */; };
+		04E2ED8F2BE18636006B5DD3 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2ED8E2BE18636006B5DD3 /* PostService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		04D4C1E42BD49E34007AC525 /* InstaCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		04D4C2002BD49FD0007AC525 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		04E2ED8C2BE17AA3006B5DD3 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		04E2ED8E2BE18636006B5DD3 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,6 +359,7 @@
 			children = (
 				04BC51B62BDD8A0600860FD1 /* UserService.swift */,
 				04BC51C42BDF6B8F00860FD1 /* ImageUploader.swift */,
+				04E2ED8E2BE18636006B5DD3 /* PostService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -608,6 +611,7 @@
 				042A310F2BD5D24B007AD68D /* CompleteSignUpView.swift in Sources */,
 				04BC51BF2BDD95C300860FD1 /* EditProfileRowView.swift in Sources */,
 				042A31112BD5F532007AD68D /* User.swift in Sources */,
+				04E2ED8F2BE18636006B5DD3 /* PostService.swift in Sources */,
 				042A31032BD5A6B9007AD68D /* SearchView.swift in Sources */,
 				042A31092BD5CCDC007AD68D /* IGTextFieldModifier.swift in Sources */,
 				042A30FD2BD4EF71007AD68D /* UserStatView.swift in Sources */,

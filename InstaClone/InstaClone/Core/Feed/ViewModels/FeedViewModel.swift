@@ -17,14 +17,6 @@ class FeedViewModel: ObservableObject {
     
     @MainActor
     func fetchPosts() async throws {
-        let data = try await Firestore.firestore().collection("posts").getDocuments()
-        posts = try data.documents.compactMap({ try $0.data(as: Post.self) })
-        
-        for i in 0..<posts.count {
-            var post = posts[i]
-            let ownerID = post.ownerUUID
-            let owner = try await UserService.fetchUser(uuid: ownerID)
-            posts[i].user = owner
-        }
+        posts = try await PostService.fetchFeedPosts()
     }
 }
