@@ -13,10 +13,8 @@ struct CurrentUserProfileView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                // header
                 ProfileHeaderView(user: user)
                 
-                // post grid view
                 PostGridView(user: user)
             }
             .navigationTitle("Profile")

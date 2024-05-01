@@ -16,7 +16,7 @@ struct PostService {
         var posts = try data.documents.compactMap({ try $0.data(as: Post.self) })
         
         for i in 0..<posts.count {
-            var post = posts[i]
+            let post = posts[i]
             let ownerID = post.ownerUUID
             let owner = try await UserService.fetchUser(uuid: ownerID)
             posts[i].user = owner

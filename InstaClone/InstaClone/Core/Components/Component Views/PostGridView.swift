@@ -29,7 +29,8 @@ struct PostGridView: View {
                 KFImage(URL(string: post.imageURL))
                     .resizable()
                     .scaledToFill()
-                    .frame(width: postFrameDimension, height: postFrameDimension)
+                    .frame(width: postFrameDimension,
+                           height: postFrameDimension)
                     .clipped()
             }
         }
